@@ -1,18 +1,30 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <v-jumbotron>
+      <v-container fill-height>
+        <v-layout align-center>
+          <v-flex>
+            <h3 class="display-3">Welcome to XJBX</h3>
+
+            <span
+              class="subheading"
+            >Lorem ipsum dolor sit amet, pri veniam forensibus id. Vis maluisset molestiae id, ad semper lobortis cum. At impetus detraxit incorrupte usu, repudiare assueverit ex eum, ne nam essent vocent admodum.</span>
+
+            <v-divider class="my-3"></v-divider>
+
+            <div class="title mb-3">Check out our newest features!</div>
+
+            <v-btn class="mx-0" color="primary" large>See more</v-btn>
+          </v-flex>
+        </v-layout>
+      </v-container>
+    </v-jumbotron>
+
+    <v-btn class="pink white--text">Click me</v-btn>
+    <v-btn color="pink">Click me</v-btn>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
-export default {
-  name: 'home',
-  components: {
-    HelloWorld
-  }
-}
+export default {};
 </script>
