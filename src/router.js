@@ -1,7 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
-import Calculator from './views/calculator.vue'
+import Calculator from './views/Calculator.vue'
+import My from './views/My.vue'
+import Articles from './views/Articles.vue'
 
 Vue.use(Router)
 
@@ -26,6 +28,16 @@ export default new Router({
       path: '/calculator',
       name: 'calculator',
       component: Calculator
+    },
+    {
+      path: '/my',
+      name: 'my',
+      component: My
+    },
+    {
+      path: '/Articles',
+      name: 'articles',
+      component: Articles
     }
   ]
 })

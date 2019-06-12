@@ -20,8 +20,25 @@
       </v-container>
     </v-jumbotron>
 
-    <v-btn class="pink white--text">Click me</v-btn>
-    <v-btn color="pink">Click me</v-btn>
+    <div>
+      <v-btn class="indigo white--text">Click me</v-btn>
+      <v-btn depressed class="indigo white--text">Click me</v-btn>
+      <v-btn flat class="indigo white--text">Click me</v-btn>
+    </div>
+
+    <div>
+      <v-btn class="indigo white--text">
+        <v-icon left>email</v-icon>
+        <span>发邮件给我</span>
+      </v-btn>
+      <v-btn small class="indigo white--text">
+        <v-icon left>email</v-icon>
+        <span>发邮件给我</span>
+      </v-btn>
+      <v-btn small fab depressed dark color="purple">
+        <v-icon>favorite</v-icon>
+      </v-btn>
+    </div>
   </div>
 </template>
 

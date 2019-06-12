@@ -1,30 +1,18 @@
 <template>
   <v-app>
-    <v-toolbar app dark class="indigo">
-      <v-toolbar-title class="headline text-uppercase">
-        <span>Xjbx</span>
-        <span class="font-weight-light">Blog</span>
-      </v-toolbar-title>
-      <v-spacer></v-spacer>
-      <v-btn
-        flat
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-      >
-        <span class="mr-2">Login</span>
-      </v-btn>
-    </v-toolbar>
+    <Navbar />
 
-    <v-content>
+    <v-content class="mx-4 my-4">
       <router-view></router-view>
     </v-content>
   </v-app>
 </template>
 
 <script>
-
+import Navbar from '@/components/Navbar'
 export default {
   name: 'App',
+  components: { Navbar },
   data () {
     return {
       //
