@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <v-jumbotron>
+    <v-jumbotron dark color="indigo">
       <v-container fill-height>
         <v-layout align-center>
           <v-flex>

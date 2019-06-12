@@ -2,7 +2,7 @@
   <v-app>
     <Navbar />
 
-    <v-content class="mx-4 my-4">
+    <v-content>
       <router-view></router-view>
     </v-content>
   </v-app>

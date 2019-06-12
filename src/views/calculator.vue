@@ -1,5 +1,5 @@
 <template>
-  <div class="calculator">
+  <div class="calculator ma-4">
     <div class="subheading grey--text">Calculator</div>
     <v-container class="my-5">
       <div class="calculatorapp">
