@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <v-jumbotron dark color="indigo">
+    <v-jumbotron dark color="primary">
       <v-container fill-height>
         <v-layout align-center>
           <v-flex>
@@ -14,7 +14,7 @@
 
             <div class="title mb-3">Check out our newest features!</div>
 
-            <v-btn class="mx-0" color="primary" large>See more</v-btn>
+            <v-btn class="mx-0" dark large flat>See more</v-btn>
           </v-flex>
         </v-layout>
       </v-container>
