@@ -28,9 +28,9 @@
       <v-layout column align-center>
         <v-flex class="mt-5">
           <v-avatar size="100">
-            <img src="/avatar.png">
+            <img :src="user.userAvatar">
           </v-avatar>
-          <p class="subheading mt-1">Jiachen Liu</p>
+          <p class="text-xs-center subheading mt-1">{{user.userName}}</p>
         </v-flex>
         <Popup/>
       </v-layout>
@@ -54,6 +54,11 @@ import LoginDialog from "./LoginDialog";
 
 export default {
   components: { Popup, LoginDialog },
+  computed: {
+    user() {
+      return this.$store.state.user
+    }
+  },
   data() {
     return {
       drawer: false,
@@ -69,6 +74,6 @@ export default {
         { icon: "person", text: "My Info", route: "/my" }
       ]
     };
-  }
+  },
 };
 </script>

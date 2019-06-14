@@ -3,7 +3,7 @@
     <div class="subheading grey--text">Articles</div>
 
     <v-container class="my-5">
-      <v-card class="pa-3" v-for="project in projects" :key="project.title">
+      <v-card class="pa-3" v-for="project in articles" :key="project.title">
         <v-layout row wrap>
           <v-flex xs12 md6>
             <div class="caption grey--text">Title</div>
@@ -32,35 +32,10 @@
 
 <script>
 export default {
-  data() {
-    return {
-      projects: [
-        {
-          title: "我的兄弟叫顺口溜",
-          person: "ShunLiu",
-          created: "2018-03-25",
-          modified: "2019-06-01"
-        },
-        {
-          title: "哈利波特大",
-          person: "HarryBot",
-          created: "2018-03-19",
-          modified: "2019-05-28"
-        },
-        {
-          title: "我的父亲是板凳腿",
-          person: "FatherBan",
-          created: "2019-01-01",
-          modified: "2019-05-27"
-        },
-        {
-          title: "Software Engineering Studio",
-          person: "YkWang",
-          created: "2017-05-06",
-          modified: "2019-01-01"
-        }
-      ]
-    };
-  }
+  computed: {
+    articles() {
+      return this.$store.state.articles
+    }
+  },
 };
 </script>

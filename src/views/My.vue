@@ -27,7 +27,7 @@
       <!-- 我的文章列表 -->
       <v-flex xs12 sm8 md8>
         <v-expansion-panel popout class="ma-3">
-          <v-expansion-panel-content v-for="project in projects" :key="project.title">
+          <v-expansion-panel-content v-for="project in articles" :key="project.title">
             <div slot="header">{{project.title}}</div>
             <v-card>
               <v-card-text class="px-4 grey--text">
@@ -44,45 +44,13 @@
 
 <script>
 export default {
-  data() {
-    return {
-      user: {
-        userId: 1,
-        userName: "Jiachen Liu",
-        userPassword: "123",
-        userDOB: "1997-01-01",
-        userDescription: null,
-        userAvatar: "/avatar.png",
-        blogList: [],
-        userGender: 0
-      },
-      projects: [
-        {
-          title: "我的兄弟叫顺口溜",
-          person: "ShunLiu",
-          created: "2018-03-25",
-          modified: "2019-06-01"
-        },
-        {
-          title: "哈利波特大",
-          person: "HarryBot",
-          created: "2018-03-19",
-          modified: "2019-05-28"
-        },
-        {
-          title: "我的父亲是板凳腿",
-          person: "FatherBan",
-          created: "2019-01-01",
-          modified: "2019-05-27"
-        },
-        {
-          title: "Software Engineering Studio",
-          person: "YkWang",
-          created: "2017-05-06",
-          modified: "2019-01-01"
-        }
-      ]
-    };
-  }
+  computed: {
+    user() {
+      return this.$store.state.user
+    },
+    articles() {
+      return this.$store.state.articles
+    }
+  },
 };
 </script>
