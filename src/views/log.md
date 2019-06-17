@@ -1,3 +1,8 @@
+## 20190618
+- 引入 Prism 用于 Markdown 渲染时的代码高亮
+- 引入 Katex 用于 Markdown 渲染时数学公式排版
+- **有待解决** Markdown 渲染时，图片宽度过宽超出屏幕
+- 
 ## 20190614
 - 引入 Vuex 用于响应式状态存储
 - 引入 vue-markdown 用于渲染 md 为 html 页面
