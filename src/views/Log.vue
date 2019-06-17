@@ -2,11 +2,9 @@
   <div class="log ma-4">
     <div class="subheading grey--text">Development log</div>
 
-    <v-card class="mt-4">
-      <v-card-text>
+    <div class="mt-4 pa-4">
         <vue-markdown>{{content}}</vue-markdown>
-      </v-card-text>
-    </v-card>
+    </div>
   </div>
 </template>
 
@@ -26,3 +24,7 @@ export default {
   mounted() {}
 };
 </script>
+
+<style scoped>
+
+</style>
