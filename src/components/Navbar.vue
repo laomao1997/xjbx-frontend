@@ -71,6 +71,7 @@ export default {
           text: "Calculator",
           route: "/calculator"
         },
+        { icon: "info", text: "Development Log", route: "/log" },
         { icon: "person", text: "My Info", route: "/my" }
       ]
     };

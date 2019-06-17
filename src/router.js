@@ -4,6 +4,7 @@ import Home from './views/Home.vue'
 import Calculator from './views/Calculator.vue'
 import My from './views/My.vue'
 import Articles from './views/Articles.vue'
+import Log from './views/Log.vue'
 
 Vue.use(Router)
 
@@ -35,9 +36,14 @@ export default new Router({
       component: My
     },
     {
-      path: '/Articles',
+      path: '/articles',
       name: 'articles',
       component: Articles
+    },
+    {
+      path: '/log',
+      name: 'log',
+      component: Log
     }
   ]
 })
